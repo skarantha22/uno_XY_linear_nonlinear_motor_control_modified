@@ -72,10 +72,10 @@ void turnMotor12ClockWise(int pulsepinnumber1, int directionpinnumber1,int pulse
                           for(k=0;k<full_cycle;k++)
                             {
                             digitalWrite(pulsepinnumber1,HIGH);
-                            digitalWrite(directionpinnumber2,HIGH);
+                            digitalWrite(pulsepinnumber2,HIGH);
                             delay(waitInMilliseconds);
                             digitalWrite(pulsepinnumber1,LOW);
-                            digitalWrite(directionpinnumber2,LOW);
+                            digitalWrite(pulsepinnumber2,LOW);
                             delay(waitInMilliseconds);
                             }
 }
@@ -89,10 +89,10 @@ void turnMotor1ClockWiseMotor2AntiClockwise(int pulsepinnumber1, int directionpi
                           for(k=0;k<full_cycle;k++)
                             {
                             digitalWrite(pulsepinnumber1,HIGH);
-                            digitalWrite(directionpinnumber2,HIGH);
+                            digitalWrite(pulsepinnumber2,HIGH);
                             delay(waitInMilliseconds);
                             digitalWrite(pulsepinnumber1,LOW);
-                            digitalWrite(directionpinnumber2,LOW);
+                            digitalWrite(pulsepinnumber2,LOW);
                             delay(waitInMilliseconds);
                             }
                               
@@ -107,10 +107,10 @@ void turnMotor1AntiClockwiseMotor2Clockwise(int pulsepinnumber1, int directionpi
                           for(k=0;k<full_cycle;k++)
                             {
                             digitalWrite(pulsepinnumber1,HIGH);
-                            digitalWrite(directionpinnumber2,HIGH);
+                            digitalWrite(pulsepinnumber2,HIGH);
                             delay(waitInMilliseconds);
                             digitalWrite(pulsepinnumber1,LOW);
-                            digitalWrite(directionpinnumber2,LOW);
+                            digitalWrite(pulsepinnumber2,LOW);
                             delay(waitInMilliseconds);
                             }
                               
@@ -125,10 +125,10 @@ void turnMotor1Motor2AntiClockwise(int pulsepinnumber1, int directionpinnumber1,
                           for(k=0;k<full_cycle;k++)
                             {
                             digitalWrite(pulsepinnumber1,HIGH);
-                            digitalWrite(directionpinnumber2,HIGH);
+                            digitalWrite(pulsepinnumber2,HIGH);
                             delay(waitInMilliseconds);
                             digitalWrite(pulsepinnumber1,LOW);
-                            digitalWrite(directionpinnumber2,LOW);
+                            digitalWrite(pulsepinnumber2,LOW);
                             delay(waitInMilliseconds);
                             }
                               
@@ -139,7 +139,7 @@ void turnMotor1Motor2stop(int pulsepinnumber1,int pulsepinnumber2)
 {
                           Serial.println("motorstop");
                           digitalWrite(pulsepinnumber1,LOW);
-                          digitalWrite(pulsepinnumber1,LOW);
+                          digitalWrite(pulsepinnumber2,LOW);
 }
 ////////////////////////////////////////Funtion 6 defination ends///////////////////////////////////////
 
